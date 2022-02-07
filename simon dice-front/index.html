@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<audio id="green-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"></audio>
+<audio id="red-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"></audio>
+<audio id="yellow-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"></audio>
+<audio id="blue-sound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"></audio>
+
+<div class="game">
+	<div id="menu" class="menu">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+					<path d="M49.652,24.826C49.652,11.137,38.515,0,24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826    C38.516,49.652,49.652,38.516,49.652,24.826z M27.264,24.788c0,1.302-1.055,2.355-2.355,2.355c-1.301,0-2.356-1.055-2.356-2.355    V12.535c0-1.301,1.055-2.356,2.356-2.356c1.301,0,2.355,1.054,2.355,2.356V24.788z M40.857,24.867    c0,8.839-7.191,16.029-16.031,16.029c-8.84,0-16.031-7.19-16.031-16.029c0-4.285,1.669-8.313,4.701-11.34    c0.46-0.46,1.062-0.689,1.665-0.689s1.207,0.23,1.667,0.691c0.92,0.921,0.919,2.412-0.002,3.332    c-2.139,2.138-3.318,4.981-3.318,8.006c0,6.24,5.077,11.315,11.318,11.315s11.317-5.075,11.317-11.315    c0-3.023-1.176-5.865-3.313-8.003c-0.92-0.921-0.919-2.412,0.001-3.333c0.921-0.921,2.412-0.919,3.333,0.001    C39.189,16.56,40.857,20.586,40.857,24.867z" fill="#263238"/>				
+		</svg>
+	</div>
+	
+	<div class="pads">
+		<div id="green" class="green pad"></div>
+		<div id="red" class="red pad"></div>
+		<div id="yellow" class="yellow pad"></div>
+		<div id="blue" class="blue pad"></div>
+	</div>
+</div>
+
+<div id="container" class="container anim" style="--delay: .2s">
+	<div id="success-box" class="success-box" style="--delay: .3s">
+	  <div class="dot"></div>
+	  <div class="dot two"></div>
+	  <div class="face">
+		<div class="eye"></div>
+		<div class="eye right"></div>
+		<div class="mouth happy"></div>
+	  </div>
+	  <div class="shadow scale"></div>
+	 
+	  <div class="message"><h1 class="alert">Felicidades Ganaste🥳😁🥳😜🥳!</h1><p>Nivel 10 completado.</p></div>
+	  <input  class="namen" type="text" id="namen" placeholder="Escribe tu nombre"/>
+	  <button class="button-box" id="envio"><h1 class="greenc">continuar</h1></button>
+	</div>
+	<div id="error-box" class="error-box">
+	  <div class="dot"></div>
+	  <div class="dot two"></div>
+	  <div class="face2">
+		<div class="eye"></div>
+		<div class="eye right"></div>
+		<div class="mouth sad"></div>
+	  </div>
+	  <div class="message"><h1 class="alert">Tu Perdiste😥😣😫😞!</h1></div>
+	  <input  class="namen" type="text" id="namene" placeholder="Escribe tu nombre"/>
+	  <button class="button-box" id="lose"><h1 class="greenc">continuar</h1></button>
+	</div>
+  </div>
+  <div id="rankingg" clsss="rankingg">
+	<button id="ver"class="btn toggle">
+		<div class="icon-menu">
+		  <span class="line line-1"></span>
+		  <span class="line line-2"></span>
+		  <span class="line line-3"></span>
+		</div>
+	  </button>
+	  <div class="ranking-tittle">Ranking de jugadores</div>
+	  <div id="datos-ranking"class="datos-ranking">
+		<div class="conte-dat" id="conte-dat">
+        <div class="num" ><p class="datt1">N</p></div>
+		<div class="namee"><p class="dattn">Nombre</p></div>
+		<div class="punt"><p class="datt">Puntaje</p></div>
+	   </div>
+   </div>
+</div>
+</body>
+</html>
